@@ -68,7 +68,7 @@ import (
   "net/http"
 
   "github.com/auth0/go-jwt-middleware"
-  "github.com/codegangsta/negroni"
+  "github.com/urfave/negroni"
   "github.com/dgrijalva/jwt-go"
   "github.com/gorilla/context"
   "github.com/gorilla/mux"
@@ -127,7 +127,7 @@ type Options struct {
   // Default: FromAuthHeader (i.e., from Authorization header as bearer token)
   Extractor TokenExtractor
   // Debug flag turns on debugging output
-  // Default: false  
+  // Default: false
   Debug bool
   // When set, all requests with the OPTIONS method will use authentication
   // Default: false
